@@ -1,0 +1,185 @@
+\doxysection{C\+:/\+Users/estiv/\+One\+Drive/\+Documentos/\+Plantillas personalizadas de Office/\+Escritorio/\+Download/\+Semestre V/\+MICROS/\+Carrito\+GPS/\+Opcion\+\_\+2/\+Bluetooth\+\_\+\+Car12/\+Bluetooth\+\_\+\+Car12.ino File Reference}
+\hypertarget{_bluetooth___car12_8ino}{}\label{_bluetooth___car12_8ino}\index{C:/Users/estiv/OneDrive/Documentos/Plantillas personalizadas de Office/Escritorio/Download/Semestre V/MICROS/CarritoGPS/Opcion\_2/Bluetooth\_Car12/Bluetooth\_Car12.ino@{C:/Users/estiv/OneDrive/Documentos/Plantillas personalizadas de Office/Escritorio/Download/Semestre V/MICROS/CarritoGPS/Opcion\_2/Bluetooth\_Car12/Bluetooth\_Car12.ino}}
+
+
+General control functions.  
+
+
+{\ttfamily \#include $<$Dabble\+ESP32.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_bluetooth___car12_8ino_a4fc01d736fe50cf5b977f755b675f11d}{setup}} ()
+\begin{DoxyCompactList}\small\item\em setup. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_bluetooth___car12_8ino_afe461d27b9c48d5921c00d521181f12f}{loop}} ()
+\begin{DoxyCompactList}\small\item\em loop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_bluetooth___car12_8ino_a054b1029f43b85ee2102bf16e37c34ef}{get\+Joystick\+Speed}} ()
+\begin{DoxyCompactList}\small\item\em get\+Joystick\+Speed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_bluetooth___car12_8ino_a618d986e214be5b102686274ac420be0}{move\+Forward}} ()
+\begin{DoxyCompactList}\small\item\em move\+Forward. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_bluetooth___car12_8ino_a39321c04c34c4c2e46ed14803bdddd39}{move\+Backward}} ()
+\begin{DoxyCompactList}\small\item\em move\+Backward. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_bluetooth___car12_8ino_a7c53288b8bc0097f1d1e67fad75820b3}\label{_bluetooth___car12_8ino_a7c53288b8bc0097f1d1e67fad75820b3} 
+int {\bfseries motor1\+Pin1} = 27
+\item 
+\Hypertarget{_bluetooth___car12_8ino_ae57a5fd530ea852690329ade799542de}\label{_bluetooth___car12_8ino_ae57a5fd530ea852690329ade799542de} 
+int {\bfseries motor1\+Pin2} = 26
+\item 
+\Hypertarget{_bluetooth___car12_8ino_a566bb35bacf091b9105604fb58a46dd5}\label{_bluetooth___car12_8ino_a566bb35bacf091b9105604fb58a46dd5} 
+int {\bfseries enable1\+Pin} = 14
+\item 
+\Hypertarget{_bluetooth___car12_8ino_ac357160c25aa37d3681b7b0f9771e6f0}\label{_bluetooth___car12_8ino_ac357160c25aa37d3681b7b0f9771e6f0} 
+int {\bfseries motor2\+Pin3} = 25
+\item 
+\Hypertarget{_bluetooth___car12_8ino_a00d870840cb730dad30acb27a2267580}\label{_bluetooth___car12_8ino_a00d870840cb730dad30acb27a2267580} 
+int {\bfseries motor2\+Pin4} = 33
+\item 
+\Hypertarget{_bluetooth___car12_8ino_a0e114caa2fa8803b308c6228800e178e}\label{_bluetooth___car12_8ino_a0e114caa2fa8803b308c6228800e178e} 
+int {\bfseries enable2\+Pin} = 32
+\item 
+\Hypertarget{_bluetooth___car12_8ino_a323a9f2cf2eeae7e0acd9fe48da80fff}\label{_bluetooth___car12_8ino_a323a9f2cf2eeae7e0acd9fe48da80fff} 
+const int {\bfseries freq} = 30000
+\item 
+\Hypertarget{_bluetooth___car12_8ino_a4ffd8c7f9e6e1ca72a9e08682dfe2488}\label{_bluetooth___car12_8ino_a4ffd8c7f9e6e1ca72a9e08682dfe2488} 
+const int {\bfseries pwm\+Channel} = 0
+\item 
+\Hypertarget{_bluetooth___car12_8ino_a9ee86182969a619919b8ab72fd747c7e}\label{_bluetooth___car12_8ino_a9ee86182969a619919b8ab72fd747c7e} 
+const int {\bfseries pwm\+Channel2} = 1
+\item 
+\Hypertarget{_bluetooth___car12_8ino_a3f31ec61b48ff621facda746f143c34c}\label{_bluetooth___car12_8ino_a3f31ec61b48ff621facda746f143c34c} 
+const int {\bfseries resolution} = 8
+\item 
+\Hypertarget{_bluetooth___car12_8ino_a5999b5641d673edc94be3ac7214f4e43}\label{_bluetooth___car12_8ino_a5999b5641d673edc94be3ac7214f4e43} 
+int {\bfseries total\+Left} = 0
+\item 
+\Hypertarget{_bluetooth___car12_8ino_a6f2f12f39d1b188840a62c95735be555}\label{_bluetooth___car12_8ino_a6f2f12f39d1b188840a62c95735be555} 
+int {\bfseries total\+Right} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+General control functions. 
+
+\begin{DoxyDate}{Date}
+2023-\/12-\/14 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Estiven Delgado \href{mailto:yeisondelgado@unicauca.edu.co}{\texttt{ yeisondelgado@unicauca.\+edu.\+co}} 
+
+Alejandra Benavides \href{mailto:vbenavides@unicauca.edu.co}{\texttt{ vbenavides@unicauca.\+edu.\+co}} 
+\end{DoxyAuthor}
+\begin{DoxyParagraph}{Copyright}
+Information contained herein is proprietary to and constitutes valuable confidential trade secrets of unicauca, and is subject to restrictions on use and disclosure.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Copyright (c) unicauca 2023. All rights reserved.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+The copyright notices above do not evidence any actual or intended publication of this material. 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_bluetooth___car12_8ino_a054b1029f43b85ee2102bf16e37c34ef}\label{_bluetooth___car12_8ino_a054b1029f43b85ee2102bf16e37c34ef} 
+\index{Bluetooth\_Car12.ino@{Bluetooth\_Car12.ino}!getJoystickSpeed@{getJoystickSpeed}}
+\index{getJoystickSpeed@{getJoystickSpeed}!Bluetooth\_Car12.ino@{Bluetooth\_Car12.ino}}
+\doxysubsubsection{\texorpdfstring{getJoystickSpeed()}{getJoystickSpeed()}}
+{\footnotesize\ttfamily void get\+Joystick\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Joystick\+Speed. 
+
+Configuration to drive the car from the dabble application.
+
+
+\begin{DoxyParams}{Parameters}
+{\em void.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+\Hypertarget{_bluetooth___car12_8ino_afe461d27b9c48d5921c00d521181f12f}\label{_bluetooth___car12_8ino_afe461d27b9c48d5921c00d521181f12f} 
+\index{Bluetooth\_Car12.ino@{Bluetooth\_Car12.ino}!loop@{loop}}
+\index{loop@{loop}!Bluetooth\_Car12.ino@{Bluetooth\_Car12.ino}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily void loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+loop. 
+
+Main core of the program that runs continuously.
+
+
+\begin{DoxyParams}{Parameters}
+{\em void.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+\Hypertarget{_bluetooth___car12_8ino_a39321c04c34c4c2e46ed14803bdddd39}\label{_bluetooth___car12_8ino_a39321c04c34c4c2e46ed14803bdddd39} 
+\index{Bluetooth\_Car12.ino@{Bluetooth\_Car12.ino}!moveBackward@{moveBackward}}
+\index{moveBackward@{moveBackward}!Bluetooth\_Car12.ino@{Bluetooth\_Car12.ino}}
+\doxysubsubsection{\texorpdfstring{moveBackward()}{moveBackward()}}
+{\footnotesize\ttfamily void move\+Backward (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+move\+Backward. 
+
+Move the car backwards.
+
+
+\begin{DoxyParams}{Parameters}
+{\em void.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+\Hypertarget{_bluetooth___car12_8ino_a618d986e214be5b102686274ac420be0}\label{_bluetooth___car12_8ino_a618d986e214be5b102686274ac420be0} 
+\index{Bluetooth\_Car12.ino@{Bluetooth\_Car12.ino}!moveForward@{moveForward}}
+\index{moveForward@{moveForward}!Bluetooth\_Car12.ino@{Bluetooth\_Car12.ino}}
+\doxysubsubsection{\texorpdfstring{moveForward()}{moveForward()}}
+{\footnotesize\ttfamily void move\+Forward (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+move\+Forward. 
+
+Move the car forward.
+
+
+\begin{DoxyParams}{Parameters}
+{\em void.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+\Hypertarget{_bluetooth___car12_8ino_a4fc01d736fe50cf5b977f755b675f11d}\label{_bluetooth___car12_8ino_a4fc01d736fe50cf5b977f755b675f11d} 
+\index{Bluetooth\_Car12.ino@{Bluetooth\_Car12.ino}!setup@{setup}}
+\index{setup@{setup}!Bluetooth\_Car12.ino@{Bluetooth\_Car12.ino}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily void setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+setup. 
+
+Initial settings before entering the loop.
+
+
+\begin{DoxyParams}{Parameters}
+{\em void.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
